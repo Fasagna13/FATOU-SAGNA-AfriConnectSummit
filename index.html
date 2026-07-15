@@ -1,13 +1,254 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Css/Style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AfriConnect Summit 2026 — Kigali, Rwanda</title>
+<meta name="description" content="AfriConnect Summit 2026 — le rendez-vous panafricain de l'innovation, de la tech et de l'entrepreneuriat. 18-20 novembre 2026, Kigali, Rwanda.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body data-theme="dark">
+
+<nav class="navbar">
+  <div class="wrap">
+    <a href="index.html" class="logo">
+        <img src="images/Logo.jpeg" alt="Logo AfriConnect Summit 2026">
+      <!-- <svg class="mark" viewBox="0 0 32 32" fill="none"><path d="M16 2 L19 13 L30 16 L19 19 L16 30 L13 19 L2 16 L13 13 Z"/></svg> -->
+      <!-- Afri<b>Connect</b> Summit -->
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="programme.html">Programme</a></li>
+      <li><a href="intervenants.html">Intervenants</a></li>
+      <li><a href="inscription.html">Inscription</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème"></button>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<!-- <div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Accueil</a>
+  <a href="programme.html">Programme</a>
+  <a href="intervenants.html">Intervenants</a>
+  <a href="inscription.html">Inscription</a>
+</div> -->
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow fade-up" style="animation-delay:.05s">Édition 2026</p>
+      <h1 class="fade-up" style="animation-delay:.15s">Là où l'Afrique <em>connecte</em><br>ses idées à l'échelle.</h1>
+      <p class="sub fade-up" style="animation-delay:.28s">Trois jours de conférences, d'ateliers et de rencontres avec les bâtisseurs de la tech, de l'énergie et de l'entrepreneuriat panafricains.</p>
+      <p class="place fade-up" style="animation-delay:.38s">
+        <span>Kigali Convention Centre, Rwanda</span>
+        <span class="dot"></span>
+        <span>18 — 20 Novembre 2026</span>
+      </p>
+      <div class="cta-row fade-up" style="animation-delay:.5s">
+        <a href="inscription.html" class="btn btn-primary">Réserver ma place</a>
+        <a href="programme.html" class="btn btn-ghost">Voir le programme</a>
+      </div>
+    </div>
+
+    <div class="ticket fade-up" style="animation-delay:.62s">
+      <div class="stamp">Édition<br>N°04</div>
+      <div class="ticket-row">
+        <span class="k">Destination</span>
+        <span class="v">KGL · Rwanda</span>
+      </div>
+      <div class="ticket-row">
+        <span class="k">Statut</span>
+        <span class="v">Inscriptions ouvertes</span>
+      </div>
+      <div class="ticket-divider"></div>
+      <p class="ticket-title">Le compte à rebours a commencé</p>
+      <div class="countdown" id="countdown">
+        <div class="cell"><div class="num" id="cd-days">00</div><div class="lbl">Jours</div></div>
+        <div class="cell"><div class="num" id="cd-hours">00</div><div class="lbl">Heures</div></div>
+        <div class="cell"><div class="num" id="cd-min">00</div><div class="lbl">Min</div></div>
+        <div class="cell"><div class="num" id="cd-sec">00</div><div class="lbl">Sec</div></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="weave"></div>
+
+<section class="stats">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat"><div class="num" data-target="1200" data-suffix="+">0</div><div class="lbl">Participants attendus</div></div>
+      <div class="stat"><div class="num" data-target="48">0</div><div class="lbl">Intervenants confirmés</div></div>
+      <div class="stat"><div class="num" data-target="3">0</div><div class="lbl">Jours de sommet</div></div>
+      <div class="stat"><div class="num" data-target="12">0</div><div class="lbl">Pays représentés</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="pourquoi">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Pourquoi venir</p>
+      <h2>Trois raisons d'être dans la salle</h2>
+      <p>AfriConnect n'est pas une conférence de plus — c'est là où les décisions du continent se prennent en marge des sessions.</p>
+    </div>
+    <div class="why-row">
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3.2"/><circle cx="17" cy="7" r="2.4"/><path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6"/><path d="M15.5 14c3 .3 5 2.5 5 6"/></svg></div>
+        <h3>Réseau panafricain</h3>
+        <p>Croisez fondateurs, décideurs publics et investisseurs venus de 12 pays en un seul lieu, pendant trois jours entiers.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-8"/><path d="M15 8h5v5"/></svg></div>
+        <h3>Accès aux investisseurs</h3>
+        <p>Sessions de pitch et rendez-vous privés avec des fonds actifs sur le continent, du seed à la série B.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V6a2 2 0 0 1 2-2h11a1 1 0 0 1 1 1v13"/><path d="M6.5 21H19"/><path d="M4 19.5A2 2 0 0 1 6 17.5h13"/></svg></div>
+        <h3>Ateliers pratiques</h3>
+        <p>Formations concrètes sur le scaling, la levée de fonds et les infrastructures numériques, animées par les praticiens.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="weave"></div>
+
+<section id="intervenants">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Sur scène</p>
+      <h2>Intervenants vedettes</h2>
+      <p>Un aperçu des 48 voix qui composeront le programme 2026.</p>
+    </div>
+    <div class="speakers-grid">
+      <div class="speaker-card reveal">
+        <div class="speaker-photo" style="background:var(--gold)">AD</div>
+        <div class="speaker-info">
+          <h3>Amara Diallo</h3>
+          <p class="role">Directrice Innovation, TechAfrica Ventures</p>
+          <p class="country">Sénégal</p>
+        </div>
+      </div>
+      <div class="speaker-card reveal">
+        <div class="speaker-photo" style="background:var(--clay)">KM</div>
+        <div class="speaker-info">
+          <h3>Kwame Mensah</h3>
+          <p class="role">Fondateur &amp; CEO, PayFlow</p>
+          <p class="country">Ghana</p>
+        </div>
+      </div>
+      <div class="speaker-card reveal">
+        <div class="speaker-photo" style="background:var(--teal)">AT</div>
+        <div class="speaker-info">
+          <h3>Aïcha Traoré</h3>
+          <p class="role">Chercheuse en IA, Institut Panafricain du Numérique</p>
+          <p class="country">Côte d'Ivoire</p>
+        </div>
+      </div>
+      <div class="speaker-card reveal">
+        <div class="speaker-photo" style="background:#8A6BB0">SO</div>
+        <div class="speaker-info">
+          <h3>Samuel Otieno</h3>
+          <p class="role">VP Ingénierie, Nairobi Cloud Labs</p>
+          <p class="country">Kenya</p>
+        </div>
+      </div>
+    </div>
+    <div class="speakers-cta reveal">
+      <a href="intervenants.html" class="btn btn-ghost">Voir tous les intervenants</a>
+    </div>
+  </div>
+</section>
+
+<section class="sponsors" id="sponsors">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Ils nous soutiennent</p>
+      <h2>Partenaires &amp; sponsors</h2>
+    </div>
+
+    <div class="tier tier-or reveal">
+      <div class="tier-label">Or</div>
+      <div class="sponsor-row">
+        <div class="sponsor-badge">Baobab Capital</div>
+        <div class="sponsor-badge">Sahel Telecom</div>
+      </div>
+    </div>
+
+    <div class="tier tier-argent reveal">
+      <div class="tier-label">Argent</div>
+      <div class="sponsor-row">
+        <div class="sponsor-badge">Kigali Bank</div>
+        <div class="sponsor-badge">NovaPay</div>
+        <div class="sponsor-badge">Zola Energy</div>
+      </div>
+    </div>
+
+    <div class="tier tier-bronze reveal">
+      <div class="tier-label">Bronze</div>
+      <div class="sponsor-row">
+        <div class="sponsor-badge">Umoja Cloud</div>
+        <div class="sponsor-badge">Tamba Logistics</div>
+        <div class="sponsor-badge">Fenix Media</div>
+        <div class="sponsor-badge">GreenPath</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col" style="flex:1 1 260px">
+        <div class="footer-logo">Afri<b>Connect</b> Summit</div>
+        <p>Le sommet panafricain de l'innovation, de la tech et de l'entrepreneuriat. Kigali, Rwanda — 18-20 novembre 2026.</p>
+        <div class="social-row">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.06c.53-1 1.83-2.05 3.77-2.05C19.6 8 21 10.13 21 13.85V23h-4v-8.2c0-1.96-.03-4.48-2.73-4.48-2.73 0-3.15 2.13-3.15 4.33V23h-4V8z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.6-6.9L4.3 22H1.2l8.1-9.3L1 2h7.3l5.1 6.3L18.9 2zm-1.2 18h1.8L7.4 4H5.5l12.2 16z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 3.3.15 4.7 1.6 4.9 4.9.07 1.3.07 1.6.07 4.8s0 3.6-.07 4.9c-.15 3.3-1.6 4.7-4.9 4.9-1.3.07-1.6.07-4.9.07s-3.6 0-4.9-.07c-3.3-.15-4.7-1.6-4.9-4.9C2.2 15.6 2.2 15.3 2.2 12s0-3.6.07-4.9c.15-3.3 1.6-4.7 4.9-4.9C8.4 2.2 8.8 2.2 12 2.2zm0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.4a1.4 1.4 0 1 1-2.9 0 1.4 1.4 0 0 1 2.9 0z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="programme.html">Programme</a></li>
+          <li><a href="intervenants.html">Intervenants</a></li>
+          <li><a href="inscription.html">Inscription</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <ul>
+          <li><a href="#">Kigali Convention Centre</a></li>
+          <li><a href="#">Hébergement partenaire</a></li>
+          <li><a href="#">Devenir sponsor</a></li>
+          <li><a href="#">Contact presse</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> AfriConnect Summit. Tous droits réservés.</span>
+      <span>Kigali, Rwanda</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Retour en haut">↑</button>
+
+<!-- <script src="script.js"></script>
+
+</html> -->
+
     <script src="js/main.js"></script>
 </body>
+
 </html>
