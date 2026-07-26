@@ -94,10 +94,15 @@ h1,h2,h3,h4{ font-family:var(--font-display); font-weight:600; letter-spacing:-0
   transition:background .35s ease, border-color .35s ease;
 }
 .navbar .wrap{ display:flex; align-items:center; justify-content:space-between; height:76px; }
-.logo{ display:flex; align-items:center; gap:10px; font-family:var(--font-display); font-weight:700; font-size:1.05rem; letter-spacing:-0.02em; }
+/* .logo{ display:flex; align-items:center; gap:10px; font-family:var(--font-display); font-weight:700; font-size:1.05rem; letter-spacing:-0.02em; }
 .logo .mark{ width:30px; height:30px; flex-shrink:0; }
 .logo .mark path{ fill:var(--gold); }
-.logo b{ color:var(--gold); font-weight:700; }
+.logo b{ color:var(--gold); font-weight:700; } */
+.logo img{
+  height: 40px;      /* ajuste cette valeur selon ce qui te plaît */
+  width: auto;       /* garde les proportions */
+  object-fit: contain;
+}
 
 .nav-links{ display:flex; align-items:center; gap:2.1rem; }
 .nav-links a{
