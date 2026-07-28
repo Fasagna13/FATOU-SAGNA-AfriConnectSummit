@@ -1,17 +1,4 @@
-/* ============================================================
-   AFRICONNECT SUMMIT 2026 — MAIN.JS
-   Regroupe toutes les interactions du site :
-   1. Thème clair/sombre (persisté en mémoire)
-   2. Menu mobile (hamburger)
-   3. Scroll reveal (.reveal -> .in)
-   4. Compte à rebours (page d'accueil)
-   5. Stats animées (compteurs, page d'accueil)
-   6. Onglets Jour 1/2/3 (programme.html)
-   7. Filtre par thématique (intervenants.html)
-   8. Formulaire d'inscription + validation (contact.html)
-   9. Accordéon FAQ (déjà géré en CSS pur, rien à faire ici)
-   10. Bouton retour en haut
-   ============================================================ */
+
 
 document.addEventListener('DOMContentLoaded', function () {
 
